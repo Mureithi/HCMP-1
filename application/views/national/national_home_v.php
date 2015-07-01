@@ -26,7 +26,7 @@
 	<body id="page-top">
 
 		<nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top container-fluid">
-			
+
 			<div class="navbar-header" id="st-trigger-effects">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -34,22 +34,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          
+
          <a href="<?php echo base_url().'kenya';?>">
-         	
+
          	<img class="navbar-brand" style="padding:0;" src="<?php echo base_url();?>assets/img/coat_of_arms_dash.png" class="img-responsive " alt="Responsive image" id="" >
          </a>
-            
-          
+
+
 
         </div>
-        
+
         <div class="navbar-brand" >
-  
+
             <a  href="<?php echo base_url().'kenya';?>" >Health Commodities Management Platform.</a>
-            
+
         </div>
-        
+
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav navbar-right">
             <!--<li class=""><a href="<?php echo base_url().'national/reports';?>">Reports</a></li>-->
@@ -59,13 +59,13 @@
               	<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url().'home';?>"><span class="glyphicon glyphicon-user"></span>Essential Commodities</a></li>
                 <li role="presentation" class="divider"></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://41.89.6.223/HCMP/user"><span class="glyphicon glyphicon-user"></span>RTK</a></li>
-                
+
               </ul>
             </li>
-                    
+
           </ul>
-          
-                                        
+
+
         </div><!--/.nav-collapse -->
 
 			<!-- /.container-fluid -->
@@ -75,11 +75,11 @@
 		<div class="container-fluid">
 
 			<div class=" row-fluid" style="margin-bottom: 12px;">
-				
-				
+
+
 
 				<div class=" tile col-xs-12 col-md-3 col-lg-3" id="coverage-map">
-					
+
 					<div class="row-fluid">
 						<input type="hidden" value="NULL" id="placeholder" />
 					<div class=" col-lg-12"  style="max-height: 480px;">
@@ -96,7 +96,7 @@
 					var map= new FusionMaps ("assets/FusionMaps/FCMap_KenyaCounty.swf","KenyaMap","100%","100%","0","0");
 					map.setJSONData(<?php echo $maps; ?>
 						);
-					
+
 						map.render("map");
 
 					</script>
@@ -109,8 +109,8 @@
 						</div>
 						<div class="col-md-8"><strong>Using HCMP</strong> </div>
 					</div>
-					
-				
+
+
 
 				</div>
 
@@ -120,27 +120,27 @@
 						<div class="tile-header">
 							National Statistics
 						</div>
-						<div class="four wide column">
-							<div class="statistic excel_" id="hcwtrained">
+						<div class="four wide column ">
+							<div class="statistic excel_ " id="hcwtrained" data-toggle="tooltip" data-placement="bottom" title="Download Excel">
 								<div class="value" id="hcw_trained">
-									
+
 								</div>
 								<div class="label" >
 									Total HCW Trained
 								</div>
 							</div>
 						</div>
-						<div class="four wide column">
-							<div class="statistic excel_" id="rolledout">
+						<div class="four wide column ">
+							<div class="statistic excel_ " id="rolledout" data-toggle="tooltip" data-placement="bottom" title="Download Excel">
 								<div class="text value" id="facilities_rolled_out" >
-									
+
 								</div>
 								<div class="label">
 									Total Facilities Rolled Out
 								</div>
 							</div>
 						</div>
-						<div class="four wide column">
+						<div class="four wide column ">
 							<div class="statistic">
 								<div class="value">
 									<i class=""></i> #
@@ -165,7 +165,7 @@
 						<div class="one wide column" style="padding:0.5%">
 							<div class="corner-label right" data-toggle="modal" data-target="#facilitystatsModal">
 
-								
+
 							</div>
 						</div>
 
@@ -175,7 +175,7 @@
 						<div class="tile" style="height: 430px">
 							<div class="" style="height: 50px; padding: 8px;margin: 0;">
 
-								
+
 
 							</div>
 							<div id="actual"></div>
@@ -184,7 +184,7 @@
 
 				</div>
 
-					
+
 
 				</div>
 
@@ -193,44 +193,44 @@
 			<div class="row-fluid">
 
 				<div class="tile col-xs-12 col-md-6 col-lg-6 ">
-					
+
 					<div class="tile-header">
 							Stock Level in Months of Stock (MOS)
 						</div>
-					
+
 					<div id="mos" class="tile_size"></div> <!--- MOS -->
-					
+
 				</div>
-				
+
 				<div class="tile col-xs-12 col-md-6 col-lg-6">
 					<div class="tile-header">Consumption</div>
-					
+
 					<div id="consumption" class="tile_size"></div> <!-- consumption -->
-					
+
 				</div>
 
 			</div>
-			
+
 			<div class="row-fluid" style="max-height: 430px;margin-top: 4%;">
 
 				<div class="tile col-xs-12 col-md-6 col-lg-6">
 					<div class="tile-header">Cost of Orders</div>
-					
+
 					<div id="orders" class="tile_size"></div> <!--- orders -->
-					
+
 				</div>
-				
+
 				<div class="tile col-xs-12 col-md-6 col-lg-6">
 					<div class="tile-header" >Order Lead Time</div>
-					
+
 					<div id="" class="tile_size">
 						<div id="lead_infor" style="padding-top: 20px;">
-         
+
 
 
       				 </div>
 					</div> <!--- orders -->
-					
+
 				</div>
 
 			</div>
@@ -298,9 +298,7 @@ var url="<?php echo base_url(); ?>
 	";
 
 	});
-	
-	
-	
+
 	//auto run
          var url ='<?php echo base_url()?>';
         // $('#potential_').on('shown.bs.tab', function (e) {
@@ -309,10 +307,16 @@ var url="<?php echo base_url(); ?>
          $('#actual_').on('shown.bs.tab', function (e) {
          $('#actual').html('');
          });
+				//add class on hover
+				$(function () {
+				  $('[data-toggle="tooltip"]').tooltip()
+				})
+
+
 
       $('.county-name').html("National "+" &nbsp;");
-      ajax_request_replace_div_content('national/expiry/NULL/NULL/NULL/NULL/NULL',"#actual"); 
-      //ajax_request_replace_div_content('national/potential/NULL/NULL/NULL/NULL/NULL',"#potential"); 
+      ajax_request_replace_div_content('national/expiry/NULL/NULL/NULL/NULL/NULL',"#actual");
+      //ajax_request_replace_div_content('national/potential/NULL/NULL/NULL/NULL/NULL',"#potential");
       ajax_request_replace_div_content('national/facility_over_view/',"#facilities_rolled_out");
       ajax_request_replace_div_content('national/hcw/',"#hcw_trained");
       ajax_request_replace_div_content('national/stock_level_mos/NULL/NULL/NULL/NULL/NULL',"#mos");
@@ -320,18 +324,18 @@ var url="<?php echo base_url(); ?>
       ajax_request_replace_div_content('national/get_facility_infor/NULL/NULL/NULL/NULL',"#facilities");
       ajax_request_replace_div_content('national/order/NULL/NULL/NULL/NULL/NULL',"#orders");
       ajax_request_replace_div_content('national/get_lead_infor/NULL/NULL/NULL/NULL/NULL',"#lead_infor");
-      
+
         $(".ecounty-filter").button().click(function(e) {
-        e.preventDefault(); 
+        e.preventDefault();
         var year = $("#eyear").val();
         var county = $("#ecounty_filter").val();
        // var district=$(this).closest("tr").find("#ecounty_filter").val();
        // var facility=$(this).closest("tr").find("#ecounty_filter").val();
            ajax_request_replace_div_content('national/expiry/'+year+'/'+county+'/NULL/NULL/NULL',"#actual");
         });
-        
+
         $(".asubcounty-filter").button().click(function(e) {
-        e.preventDefault(); 
+        e.preventDefault();
         var year=$("#asubcountyyear").val();
         var county_id=$('#county_id').val();
         var district=$("#asubcounty_filter").val();
@@ -340,23 +344,23 @@ var url="<?php echo base_url(); ?>
         });
         /////potential
         $(".pcounty-filter").button().click(function(e) {
-        e.preventDefault(); 
+        e.preventDefault();
         var county=$("#pcounty_filter").val();
         ajax_request_replace_div_content('national/potential/'+county+'/NULL/NULL/NULL',"#potential");
         });
-        
+
         $(".psubcounty-filter").button().click(function(e) {
-        e.preventDefault(); 
+        e.preventDefault();
         var county_id=$('#county_id').val();
         var district=$("#psubcounty_filter").val();
         var facility=$("#psubcounty_facility_filter").val();
         ajax_request_replace_div_content('national/potential/'+county_id+'/'+district+'/'+facility+'/NULL',"#potential");
         });
-     
+
          $(".subcounty").click(function(){
             /*
              * when clicked, this object should populate facility names to facility dropdown list.
-             * Initially it sets a default value to the facility drop down list then ajax is used 
+             * Initially it sets a default value to the facility drop down list then ajax is used
              * is to retrieve the district names using the 'dropdown()' method used above.
              */
             json_obj = {"url":"<?php echo site_url("orders/getFacilities");?>",}
@@ -364,11 +368,11 @@ var url="<?php echo base_url(); ?>
             var id = $(this).attr("value");
             $('.subcounty').val(id);
             dropdown(baseUrl,"district="+id,".facility");
- 
-          
+
+
         });
 
-      
+
     function run(data){
         var county_data=data.split('^');
         $('#placeholder').val(county_data[0]);
@@ -381,7 +385,7 @@ var url="<?php echo base_url(); ?>
         var baseUrl=json_obj.url;
         dropdown(baseUrl,"county="+county_data[0],".subcounty");
         ajax_request_replace_div_content('national/expiry/NULL/'+county_data[0]+'/NULL/NULL/NULL',"#actual");
-        //ajax_request_replace_div_content('national/potential/'+county_data[0]+'/NULL/NULL/NULL/NULL',"#potential"); 
+        //ajax_request_replace_div_content('national/potential/'+county_data[0]+'/NULL/NULL/NULL/NULL',"#potential");
         ajax_request_replace_div_content('national/stock_level_mos/'+county_data[0]+'/NULL/NULL/NULL/ALL',"#mos");
         ajax_request_replace_div_content('national/consumption/'+county_data[0]+'/NULL/NULL/NULL',"#consumption");
         ajax_request_replace_div_content('national/get_facility_infor/'+county_data[0]+'/NULL/NULL/NULL',"#facilities");
@@ -428,31 +432,30 @@ var url="<?php echo base_url(); ?>
         $(div).html(msg);
         }
         });
-        } 
+        }
         $(".excel_").click(function(e) {
         e.preventDefault();
-        
+
         var county_id=$('#placeholder').val();
        // alert(county_id);
-        var type=$(this).attr('id'); 
-        
+        var type=$(this).attr('id');
+
         var link='';
-        
-        if(type=='hcwtrained'){ 
+
+        if(type=='hcwtrained'){
         link='national/hcw/'+county_id+'/NULL/NULL/excel';
         }
-        
+
         if(type=='rolledout'){
         link='national/facility_over_view/'+county_id+'/NULL/NULL/excel';
         }
-        
-       
-        window.open(url+link,'_parent'); 
-        });  
+
+
+        window.open(url+link,'_parent');
+        });
 
 		</script>
 
 	</body>
 
 </html>
-
